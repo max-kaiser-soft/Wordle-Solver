@@ -238,6 +238,9 @@ static void activate(GtkApplication *app, gpointer user_data) { //activate GUI
     setup_actions(app); //app.whatever actions
 
     GtkWidget *window = gtk_application_window_new(app);
+
+    gtk_window_set_default_icon_name("com.kaiser.wordlesolver");
+
     gtk_window_set_title(GTK_WINDOW(window), "Worlde Solver");
     gtk_window_set_default_size(GTK_WINDOW(window), 1000, 520);
     gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
@@ -453,10 +456,9 @@ static void activate(GtkApplication *app, gpointer user_data) { //activate GUI
 }
 
 int main(int argc, char **argv) { //main
-    GtkApplication *app;
     int status;
 
-    app = gtk_application_new("com.example.test", G_APPLICATION_DEFAULT_FLAGS);
+    GtkApplication *app = gtk_application_new("com.kaiser.wordlesolver", G_APPLICATION_DEFAULT_FLAGS);
     g_signal_connect(app, "activate", G_CALLBACK(activate), NULL);
 
     status = g_application_run(G_APPLICATION(app), argc, argv);

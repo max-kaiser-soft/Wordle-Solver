@@ -341,6 +341,11 @@ void readFile(){ //reads wordlist file and puts words into wordRank vector
 
     if (wordListFile.is_open()){
         while (getline(wordListFile, line) && formatting){
+
+            if (!line.empty() && line.back() == '\r') { //strips hidden Windows characters
+                line.pop_back();
+            }
+
             if(checkLine(line)){
                 wordRank.push_back({toLowerCase(line), 0});
             }
