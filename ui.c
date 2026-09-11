@@ -75,7 +75,7 @@ static void about_activated(GSimpleAction *action, GVariant *parameter, gpointer
         "comments", "A Worlde solving program.",
         "logo", icon,
         "license-type", GTK_LICENSE_GPL_3_0,
-        "website", "https://github.com",
+        "website", "https://github.com/max-kaiser-soft/Wordle-Solver",
         "website-label", "GitHub Repo",
         NULL);
 
