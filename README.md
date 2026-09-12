@@ -35,7 +35,7 @@
   * Application is compiled for 64 bit Windows.
 
 ## Tutorial
-  This Wordle Solver looks little like an actual Wordle game. This design choice was deliberate, as copying the style of the actual game limits what users can do with a solver. 
+  This Wordle Solver does not look like an actual Wordle game. This design choice was deliberate, as copying the style of the actual game limits what users can do with a solver. 
   
   Application allows users to input for as many guesses as they want, which can surpass a standard Wordle game. This gives users more freedom in how they go through different words.
 
