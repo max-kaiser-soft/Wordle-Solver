@@ -8,7 +8,7 @@
  ### Adaptive Elimination
   * Application recalculates words with every run.
  ### Automatic Dictionary Switching
-  * Application will automatically swap to a larger word list when the core word list runs out of possible answers. This will solve words like "pshaw" without harming optimization.
+  * Application will automatically swap to a larger word list when the core word list runs out of possible answers. This will solve words like "pshaw" without wildly harming optimization.
   * Users are also able to manually swap between word lists if desired.
  ### Low System Requirements
   * Native GTK4 Application written in C and C++.
